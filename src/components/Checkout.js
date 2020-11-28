@@ -1,11 +1,4 @@
-import {
-  //   CardCvcElement,
-  CardElement,
-  //   CardExpiryElement,
-  //   CardNumberElement,
-  useElements,
-  useStripe,
-} from "@stripe/react-stripe-js"
+import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js"
 import React from "react"
 
 export default function Checkout() {
@@ -44,10 +37,6 @@ export default function Checkout() {
         }}
       >
         <CardElement />
-
-        {/* <CardNumberElement />
-        <CardExpiryElement />
-        <CardCvcElement /> */}
       </div>
       <button onClick={checkoutSubmit}>Checkout</button>
     </div>
